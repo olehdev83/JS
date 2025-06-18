@@ -12,6 +12,7 @@ if (valueNum > 0) {
 } else {
     console.log(false);
 }
+    
 */
 
 //***2***
@@ -26,6 +27,7 @@ if (valueStr === "test") {
 } else {
     console.log(false);
 }
+
 */
 
 //***3***
@@ -37,6 +39,7 @@ if (valueStr === "test") {
 /*
 let valueNum = 13;
 (valueNum < 10) ? console.log(valueNum - 5) : console.log(valueNum + 5);
+
 */
 
 //***4***
@@ -44,7 +47,64 @@ let valueNum = 13;
 // виведіть місяць який дорівнює числу
 
 //***Відповідь***
+/*
+const valueNum = prompt('Введіть число від 1 до 12');
+let valueName;
 
+switch (valueNum) {
+    case "1":
+        valueName = "Січень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "2":
+        valueName = "Лютий";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "3":
+        valueName = "Березень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "4":
+        valueName = "Квітень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "5":
+        valueName = "Травень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "6":
+        valueName = "Червень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "7":
+        valueName = "Липень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "8":
+        valueName = "Серпень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "9":
+        valueName = "Вересень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "10":
+        valueName = "Жовтень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "11":
+        valueName = "Листопад";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    case "12":
+        valueName = "Грудень";
+        alert(`Число ${valueNum} відповідає місяцю ${valueName}`);
+        break;
+    
+    default: alert(`Число ${valueNum} Не відповідає місяцю`);
+}
+
+*/
 
 //***5**
 //Зробіть сервіс який отримує тризначне число 
