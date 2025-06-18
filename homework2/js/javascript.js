@@ -5,15 +5,28 @@
 //Перевірте це на варіантах 1, 0, -3.
 
 //***Відповідь***
-
+/*
+let valueNum = 0;
+if (valueNum > 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+*/
 
 //***2***
 // Якщо змінна ="test" - виведіть true, 
 //Перевірте це на варіантах 'test', "qwerty", true
 
 //***Відповідь***
-
-
+/*
+let valueStr = true
+if (valueStr === "test") {
+    console.log(true);
+} else {
+    console.log(false);
+}
+*/
 
 //***3***
 // Якщо змінна більше 10 - відніміть 5, 
@@ -21,7 +34,10 @@
 //Перевірте це на варіантах 1, 10, 13.
 
 //***Відповідь***
-
+/*
+let valueNum = 13;
+(valueNum < 10) ? console.log(valueNum - 5) : console.log(valueNum + 5);
+*/
 
 //***4***
 //Зробіть сервіс який отримує число від 1 до 12 
