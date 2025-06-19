@@ -10,9 +10,8 @@
 //***Відповідь***
 /*
 let name = 'Петро';
-let city;
-let result = city = name;
-console.log(result); 
+let city = name;;
+console.log(city); 
 */
 
 //***2***
@@ -59,8 +58,8 @@ console.log(typeof num2);
 let num1 = 0.1;
 let num2 = 0.2;
 
-let suma = (num1 + num2).toFixed(1); //** toFixed(1) - Округлює до однго знака після коми
-console.log(suma); // 0.3
+let suma = Number((num1 + num2).toFixed(1)); //** toFixed(1) - Округлює до однго знака після коми
+console.log(typeof suma); // 0.3
 */
 
 //***5**
@@ -74,8 +73,8 @@ let num3 = 50;
 let num4 = 40;
 
 let nums = Math.max(num1, num2, num3, num4);
-let result = parseInt(nums)
-console.log(result);
+
+console.log(nums);
 */
 
 //***6**
@@ -84,7 +83,7 @@ console.log(result);
 //***Відповідь***
 /*
 let result = Math.random() * (4 - 2 + 2);
-console.log(result.toFixed(1));
+console.log(Number(result.toFixed(1)));
 */
 
 //***7**
@@ -139,8 +138,7 @@ person.name = 'Петро';
 person.age = 29;
 person.city = 'Вінниця';
 
-for (key in person) {
-    console.log(person[key]);
-    console.log(key);
+for (let key in person) {
+    console.log(`${key} : ${person[key]}`);
 }
 */
