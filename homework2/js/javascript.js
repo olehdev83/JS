@@ -111,3 +111,21 @@ switch (valueNum) {
 //Поверніть користувачу сумму цих чисел
 
 //***Відповідь***
+/*
+let valueNum = parseInt(prompt('Введіть тризначне число'), 10);
+let sumNum;
+
+if (valueNum >= 100 && valueNum <= 999) { // перевірка чи число тризначне
+    let handrNum = Math.floor(valueNum / 100); // соті
+
+    let tensNum = Math.floor((valueNum % 100) / 10); // десятки
+    
+    let unitNum = valueNum % 10; //одиниці
+
+    sumNum = handrNum + tensNum + unitNum;
+    alert(`Тризначне число ${valueNum} сума числа ${sumNum}`);
+} else {
+    alert(`Число ${valueNum} повинно бути тризначне`);
+}
+
+*/
