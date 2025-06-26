@@ -53,8 +53,21 @@ studentInfo.Display.bind(Oksana, 'Кухар', 5, 0)();
 
 //***Відповідь***
 
+/* 
+const htmButton = document.getElementById('info__html');
+const cssButton = document.getElementById('info__css');
+const information = document.getElementById('info__text');
 
 
+htmButton.addEventListener('click', () => {
+    information.textContent = 'HTML - це стандартна розмітка для створення веб-сторінок.';
+});
+
+cssButton.addEventListener('click', () => { 
+    information.textContent = 'CSS — це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду';
+});
+
+ */
 
 //***3***
 
@@ -68,3 +81,16 @@ studentInfo.Display.bind(Oksana, 'Кухар', 5, 0)();
 
 //***Відповідь***
 
+/* 
+
+const shop = (name, price, quantity) => {
+    const suma = price * quantity;
+
+    return `Товар: ${name}, Вартість: ${suma} грн.`;
+}
+
+console.log(shop('banana', 30, 4.5));
+console.log(shop('cherry', 58, 1.3));
+console.log(shop('cherry', 89, 3.4));
+
+ */
