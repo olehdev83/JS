@@ -40,7 +40,7 @@ const Oksana = {
 }
 
 studentInfo.Display.call(Vasyl, 'Каменщик', 1.2 , 5);
-studentInfo.Display.apply(Peter,['Электрик', 3,2 , 4]);
+studentInfo.Display.apply(Peter,['Электрик', 3.2 , 4]);
 studentInfo.Display.bind(Oksana, 'Кухар', 5, 0)();
 
 */
@@ -93,4 +93,4 @@ console.log(shop('banana', 30, 4.5));
 console.log(shop('cherry', 58, 1.3));
 console.log(shop('cherry', 89, 3.4));
 
- */
+*/

@@ -1,17 +1,19 @@
 //Домашня робота 4
 
 //***1***
-// У вас є масив об’єктів fruts, і в кожному з них є name 
-// Напишіть код, який перетворює їх в масив імен.
+
+//Перепишіть функцію, використовуючи '?' або '||'.
 
 /* 
 
- const fruts = [
-    { id: 0, name: "Apple" },
-    { id: 1, name: "Tomat" },
-    { id: 2, name: "Cherry" },
-    { id: 3, name: "Orange" },
-];
+ function checkAge(age) { 
+        if (age > 18) {
+    return true; 
+    } 
+    else {
+        return confirm('Батьки дозволили?');
+    }
+}
 
  */
 
@@ -19,96 +21,88 @@
 
 /* 
 
-let arrayFrutsName = fruts.map(item => item.name); // Використаєм метод map для перебору масива та повернем значення ключа name
-console.log(arrayFrutsName);
+function checkAge(age) { 
+    return age > 18 ? true : confirm('Батьки дозволили?');
+}
+
+function checkAge(age) {
+    return age > 18 || confirm('Батьки дозволили?');
+}
+
+checkAge(18);
 
 */
 
 //***2***
-//Виведіть парні числа від 2 до 10, використовуючи цикл for.
+
+//Напишіть функцію min(a, b), яка повертає менше з двох чисел a та b.
 
 //***Відповідь***
 
 /* 
 
-for (let i = 2; i <= 10; i += 2){
-    console.log(i);
+let min = (a, b) => {
+    if (a < b) {
+        return console.log(a);
+    } else {
+        return console.log(b);
+    }
 }
 
- */
+min(7, 8);
 
+*/
 
 //***3***
 
-//Замініть цикл "for" на "while" // for (let i = 0; i < 5; i++) {
-// console.log( `цифра ${i}!` ); // }
-
-//***Відповідь***
-
 /* 
 
-let i = 0
-while (i < 5) {
-    console.log(`цифра ${i}!`);
-i++;
 
-} 
-
-*/
-
-//***4***
-
-//Напишіть цикл, який пропонує prompt ввести число більше за 100. 
-//Якщо відвідувач введе менше число – попросити ввести ще раз, і так далі. 
-//Цикл повинен запитувати число доти, доки відвідувач не введе число, 
-// більше за 100, або не скасує ввід/введе порожній рядок.
-
-//***Відповідь***
-
-/* 
-
-while (true) {
-    let valueNum = prompt("Введіть число більше за 100 (або натисніть Cancel для виходу):");
-    // Перевірка на скасування вводу
-    if (valueNum === null || valueNum.trim() === "") {
-        break;
-    }
-    // Перетворення введеного значення строки на число
-    let number = Number(valueNum);
-    
-    if (true) { // Перевірка чи щось ввели
-        if (number > 100) {
-            alert(`Ви ввели число: ${number}`);
-            break;
-        } else {
-            alert('Число повинно бути більше за 100. Спробуйте ще раз');
-        }
-    }
+function ask(question, yes, no) {
+    if (confirm(question))
+        yes();
+    else
+        no();
 }
 
+
+
+ask(
+        
+    "Ви згодні?",
+        function () {
+            alert("Ви погодились."); 
+            
+        },
+
+        function () {
+            alert("Ви скасували виконання.");
+        }
+);
+
 */
-
-//***5**
-// Вирахуйте середній вік
-
-/* 
-
-const girls = [
-    { age: 23, name: "Оля" },
-    { age: 29, name: "Аня" },
-    { age: 10, name: "Юля" },
-    { age: 20, name: "Катя" },
-];
 
 //***Відповідь***
 
-// Сума віків
+/* 
 
-let sumaAges = girls.reduce((sum, girl) => sum + girl.age, 0);
+let ask = (question, yes, no) => {
+    if (confirm(question))
+        yes();
+    else
+        no();
+} 
 
-// Середній вік
+ask(
+    "Ви згодні?",
 
-let avarageAge = sumaAges / girls.length;
-console.log(Math.floor(avarageAge));
+    () => {
+        alert("Ви погодились.");
+    },
+    
+    () => {
+        alert("Ви скасували виконання.");
+    }
+)
 
- */
+*/
