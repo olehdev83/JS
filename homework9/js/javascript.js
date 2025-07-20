@@ -43,3 +43,37 @@ btnClick_hide = addEventListener('click', () => {
 })
 
 */
+
+
+/* -----3---- */
+
+/* 
+
+Створіть дерево, яке показує / приховує дочірні вузли при кліці
+
+*/
+
+//***Відповідь***
+
+/*
+
+document.querySelectorAll('.toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        const parentLi = this.parentElement;
+        const childUl = parentLi.querySelector('ul');
+
+        if (childUl) {
+            childUl.style.display = childUl.style.display === 'none' ? 'block' : 'none';
+            this.textContent = this.textContent === '+' ? '-' : '+';
+        }
+    });
+});
+
+// Сховати всі дочірні списки за замовчуванням
+document.querySelectorAll('#tree ul').forEach(ul => {
+    ul.style.display = 'none';
+});
+
+*/
+
+
